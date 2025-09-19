@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/section-img/section1.pnggit init" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <title>Food Delivery</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <!-- Main container wrapping the whole site -->
+    <div class="main-container">
+      <!-- ==========================
+           HEADER SECTION
+           ========================== -->
+      <header>
+        <nav>
+          <!-- Left navigation: logo + site name -->
+          <div class="left-nav">
+            <img src="./assets/logo/logo.png" alt="Logo" />
+            <h1>Food Delivery</h1>
+          </div>
+
+          <!-- Center navigation links -->
+          <div class="center-nav">
+            <ul>
+              <li>Home</li>
+              <li>Tracking</li>
+              <li>Shipping</li>
+              <li>Locations</li>
+              <li>Support</li>
+            </ul>
+          </div>
+
+          <!-- Right navigation: Signin/Register buttons -->
+          <div class="right-nav">
+            <button class="signBtn btn">Signin</button>
+            <button class="registerBtn btn">Register</button>
+          </div>
+
+          <!-- Hamburger menu for mobile -->
+          <button class="menu-toggle" id="menuBtn">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+        </nav>
+
+        <!-- Decorative vectors in header -->
+        <div class="vector-img left">
+          <img src="/assets/header-img/Vector 828.png" alt="vector-left" />
+        </div>
+        <div class="vector-img right">
+          <img src="/assets/header-img/Vector 828.png" alt="vector-right" />
+        </div>
+      </header>
+
+      <!-- Overlay for mobile menu -->
+      <div class="overlay" id="overlay"></div>
+
+      <!-- ==========================
+           MOBILE SIDEBAR MENU
+           ========================== -->
+      <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+        <!-- Close button for mobile menu -->
+        <button class="close-btn" id="closeBtn">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+
+        <!-- Mobile navigation links -->
+        <ul>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined"> home </span> Home</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined"> local_shipping </span>
+              Tracking</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined"> inventory_2 </span>
+              Shipping</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined"> location_on </span>
+              Locations</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined"> support_agent </span>
+              Support</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined"> login </span> Signin</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined"> person_add </span>
+              Register</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- ==========================
+           SECTION 1 - HERO / INTRO
+           ========================== -->
+      <div class="main-container-section">
+        <div class="container-section">
+          <div class="section1">
+            <!-- Left side: Text + search + stats -->
+            <div class="left-text">
+              <h1>
+                We deliver your food all over the city within <br />
+                <span class="highlight">30 minutes</span>
+              </h1>
+
+              <!-- Search bar -->
+              <div class="searchBtn">
+                <input type="text" placeholder="Enter location address" />
+                <button>Explore</button>
+              </div>
+
+              <!-- Stats section -->
+              <div class="stat-section">
+                <div class="stats-group">
+                  <h1>350+</h1>
+                  <p>order</p>
+                </div>
+                <div class="stats-group">
+                  <h1>10x</h1>
+                  <p>Faster Delivery</p>
+                </div>
+                <div class="stats-group">
+                  <h1>10+</h1>
+                  <p>in Country</p>
+                </div>
+                <div class="stats-group">
+                  <h1>99.9%</h1>
+                  <p>Order Accuracy</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right side: Hero image -->
+            <div class="right-img">
+              <img src="/assets/section-img/section1.png" alt="drive-illus" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================
+             SECTION 2 - FEATURE CARDS
+             ========================== -->
+        <section class="section2">
+          <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="cards">
+              <span class="material-symbols-outlined"> location_on </span>
+              <h1 class="title">Choose your location</h1>
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="cards">
+              <span class="material-symbols-outlined"> restaurant </span>
+              <h1 class="title">Select Restaurant</h1>
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="cards">
+              <span class="material-symbols-outlined"> ramen_dining </span>
+              <h1 class="title">Make your order</h1>
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="cards">
+              <span class="material-symbols-outlined"> send </span>
+              <h1 class="title">Food is on the way</h1>
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==========================
+             SECTION 3 - INFO / IMAGE
+             ========================== -->
+        <section class="section3">
+          <img src="/assets/section-img/section3.png" alt="section3 image" />
+          <div class="left-text-section3">
+            <h1>We have the Largest <br />Restaurant Chain</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="btn-learn-more">
+              <button>Learn More</button>
+            </div>
+
+            <!-- Decorative images -->
+            <div class="star-image">
+              <img src="/assets/section-img/stars.png" alt="stars" />
+            </div>
+            <div class="pizza-icon">
+              <img src="/assets/section-img/pizza.png" alt="pizza" />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==========================
+           SECTION 4 - FOOD MENU
+           ========================== -->
+      <div class="main-food-container">
+        <div class="title">
+          <h1>Popular dishes with delivery</h1>
+          <p>
+            The most delicious and healthy dishes from our chefs. You can order
+            this meal separately or as part of a meal plan.
+          </p>
+        </div>
+
+        <div class="max-width-container">
+          <!-- Loading spinner -->
+          <div class="loading-container">
+            <div class="circle-spinner"></div>
+            <p id="loading" class="loading-text">Loading menu</p>
+          </div>
+
+          <!-- Grid for dynamically generated food cards -->
+          <div
+            id="food-grid"
+            class="grid-responsive"
+            style="display: none"
+          ></div>
+        </div>
+      </div>
+
+      <!-- ==========================
+           SECTION 5 - APP INFO & CLIENTS
+           ========================== -->
+      <div class="main-container-section-4">
+        <section class="section4">
+          <!-- Left text -->
+          <div class="left-section4">
+            <h1>Delicious and healthy food for your body</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <img
+              src="/assets/section-img/playstoreAppstore.png"
+              alt="app store"
+            />
+          </div>
+
+          <!-- Right image -->
+          <div class="right-section">
+            <div class="img-container">
+              <img
+                src="/assets/section-img/section4.png"
+                alt="section4 image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Client Testimonials -->
+        <div class="main-container-section-5">
+          <section class="section5">
+            <h1>What our Clients Say</h1>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate cillum dolore
+              eu fugiat nulla pariatur.
+            </p>
+            <img src="/assets/section-img/qoute.png" alt="quote" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <h2>Web Developer</h2>
+            <img src="/assets/section-img/star.png" alt="star" />
+            <img
+              class="group"
+              src="/assets/section-img/group.png"
+              alt="group"
+            />
+            <img
+              class="chickenJoy"
+              src="/assets/section-img/checkinJoy.png"
+              alt="chicken joy"
+            />
+          </section>
+        </div>
+      </div>
+
+      <!-- ==========================
+           FOOTER
+           ========================== -->
+      <div class="footer-container">
+        <footer>
+          <div class="footer-control">
+            <!-- Left footer: logo + description + social -->
+            <div class="left-footer">
+              <div class="logo">
+                <img src="/assets/logo/logo.png" alt="logo" />
+                <h1>Food Delivery</h1>
+              </div>
+              <div class="left-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="social">
+                <img src="/assets/footer/social.png" alt="social" />
+              </div>
+            </div>
+
+            <!-- Quick links -->
+            <div class="quickLink">
+              <h2>Quick link</h2>
+              <p>Tracking</p>
+              <p>Shipping</p>
+              <p>Locations</p>
+              <p>Support</p>
+            </div>
+
+            <!-- Contact info -->
+            <div class="quickLink">
+              <h2>Contact us</h2>
+              <div class="contact-group">
+                <img src="/assets/logo/contact.png" alt="contact" />
+                <p>+639672493792</p>
+              </div>
+              <div class="contact-group">
+                <img src="/assets/logo/email.png" alt="email" />
+                <p>vigiperez2324@gmail.com</p>
+              </div>
+              <div class="contact-group">
+                <img src="/assets/logo/location.png" alt="Location" />
+                <p>General Trias</p>
+              </div>
+            </div>
+
+            <!-- Subscribe form -->
+            <div class="subscribe">
+              <h2>Subscribe</h2>
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+
+          <!-- Footer copyright -->
+          <div class="footer-text">
+            <p class="copyright">© 2025 Uitaskca. All Rights Reserved.</p>
+          </div>
+        </footer>
+
+        <!-- Decorative absolute images -->
+        <div class="image-absoulute">
+          <img src="/assets/header-img/Vector 828.png" alt="" />
+          <img src="/assets/header-img/Vector 828.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
