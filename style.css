@@ -708,8 +708,12 @@ header nav {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loading-text {
@@ -831,7 +835,7 @@ header nav {
   justify-content: center;
   align-items: end;
   background-color: var(--header-background);
-  z-index: -1;
+  z-index: 999;
 }
 
 .footer-container footer {
@@ -860,15 +864,27 @@ footer .footer-control .left-footer {
   gap: 40px;
 }
 
+/* HOVER EFFECT FOR LOGO (if clickable) */
 footer .footer-control .left-footer .logo {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+footer .footer-control .left-footer .logo:hover {
+  transform: translateY(-3px);
 }
 
 footer .footer-control .left-footer .logo h1 {
   font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+footer .footer-control .left-footer .logo:hover h1 {
+  color: #f0a500;
 }
 
 footer .footer-control .left-footer .left-text {
@@ -880,8 +896,23 @@ footer .footer-control .left-footer .left-text p {
   line-height: 1.5;
 }
 
+/* HOVER EFFECT FOR SOCIAL ICONS */
 footer .footer-control .left-footer .social {
+  display: flex;
+  gap: 12px;
+}
+
+footer .footer-control .left-footer .social a {
+  display: inline-block;
+  color: white;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
+}
+
+footer .footer-control .left-footer .social a:hover {
+  color: #f0a500;
+  transform: translateY(-3px);
 }
 
 /* -- Quick links -- */
@@ -902,6 +933,7 @@ footer .footer-control .left-footer .social {
 
 .footer-control .quickLink p:hover {
   color: #333;
+  /* slide effect to the right */
 }
 
 /* -- Contact & subscribe -- */
@@ -927,11 +959,16 @@ footer .footer-control .left-footer .social {
   outline: none;
   color: white;
   font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
 .footer-control .subscribe input::placeholder {
   font-size: 1rem;
   color: white;
+}
+
+.footer-control .subscribe input:focus {
+  border-color: #f0a500;
 }
 
 .footer-control .subscribe button {
@@ -940,11 +977,13 @@ footer .footer-control .left-footer .social {
   padding: 10px;
   font-size: 1.2rem;
   border: none;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .footer-control .subscribe button:hover {
-  background-color: #dbaf7a;
+  background-color: #f0a500;
+  transform: translateY(-2px);
 }
 
 /* -- Footer text -- */
@@ -966,6 +1005,7 @@ footer .footer-control .left-footer .social {
   height: 100%;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
 
 .footer-container .image-absoulute img:first-child {
