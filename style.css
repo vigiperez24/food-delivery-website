@@ -825,6 +825,11 @@ header nav {
   margin-top: 10px;
 }
 
+.group-profile {
+  max-width: 300px;
+  cursor: pointer;
+}
+
 /* ============================= */
 /*            FOOTER             */
 /* ============================= */
@@ -940,6 +945,9 @@ footer .footer-control .left-footer .social a:hover {
 .footer-control .contact-group {
   display: flex;
   gap: 10px;
+}
+
+.footer-control .contact-group img {
 }
 
 .footer-control .subscribe {
